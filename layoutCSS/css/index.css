@@ -1,0 +1,109 @@
+/* Global */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.clear{
+    clear: both;
+}
+/* he1ader */
+.header img{
+    width: 150px;
+}
+/* Navbar */
+.navbar ul{
+    list-style: none;
+    background-color: black;
+    padding: 10px 0;
+}
+.navbar ul a{
+text-decoration: none;
+color: white;
+}
+.navbar ul li{
+    display: inline;
+    margin: 0 10px;
+}
+/* carousel */
+.carousel{
+    background-image: url(../img/slider_1.jpg);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/* products */
+.products{
+    clear: both;
+}
+h1{
+  padding: 10px 0;  
+}
+.products__items{
+    float: left;
+    width: 25%;
+    padding: 0 15px;
+    padding-bottom: 35px;
+}
+.products__items img{
+    width: 100%;
+}
+/* intro */
+.intro__left, .intro__right, .intro__img1, .intro__img2{
+width: 50%;
+float: left;
+}
+.intro__items.intro__img1, .intro__items.intro__img2 {
+    width: 50%;
+    float: left;
+}
+.intro__items img {
+width: 100%;
+display: block;
+}
+.intro__items{
+    padding: 0 10px 20px;
+}
+.intro-text {
+    margin-bottom: 10px;
+    padding: 15px 5px;
+    text-align: justify;
+}
+.img5{
+    margin-top: 27px;
+}
+/* Banner */
+.banner{
+    clear: both;
+    background-image: url('../img/nature.jpg');
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat; /* tranh de hinh bi lap lai khi hinh khong vua*/
+    background-position: center;
+    position: relative; /*moi quan he vs absulute o lop con*/
+}
+.banner__circle{
+    background-color: rgba(255, 0, 0, 0.5);
+    height: 250px;
+    width: 250px;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 70px;
+    /* opacity: 0.7; do mo cua hinh */
+    position: absolute; /*vi tri khong co dinh trong man hinh*/
+    top: 85px;
+    left: 315px;
+}
+/* SERVICES
+ */
+.services__content{
+    float: left;
+    display: inline; /*use tren cung 1 hang*/
+    clear: both;
+}
+/* FOOTER */
+.footer{
+    padding: 20px 0;
+}

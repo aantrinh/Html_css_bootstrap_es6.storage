@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <input type="text" value="CyberSoft" id="username">
+    <hr>
+    <!-- event trong java# -->
+    <div id="idBeforeText">Nội dung trước khi thay đổi</div>
+    <button id="btnNhanEmDi" class="btn btn-success">Nhấn em đi</button>
+    <hr>
+    <div id="idTextColor">Text trước khi đổi màu</div>
+    <button class="btn btn-danger" id="btnChangeColor">Color Changing</button>
+    <hr>
+    <img src="./imgs/pic_bulboff.gif" alt="pic_bulboff"" id=" lightOff">
+    <!-- <img src="./imgs/pic_bulbon.gif" alt="pic_bulbon" id="lightOn"> -->
+    <button id="clickOn">On</button>
+    <button id="clickOff">Off</button>
+    <hr>
+    <div id="txtHide">Thẻ sẽ bị ẩn khi click</div>
+    <button class="btn btn-warning" id="btnHideText">Nhấn em đi anh</button>
+
+    <hr>
+    <div>Nhấn để Disabled</div>
+    <button class="btn btn-info" id="btnDisable">Click to Disabled</button>
+
+
+    <hr>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label for="">username</label>
+                    <input type="text" name="" id="txtusername" class="form-control" value="">
+                </div>
+                <div class="form-group">
+                    <label for="">password</label>
+                    <input type="text" name="" id="txtpassword" class="form-control" value="">
+                </div>
+                <button class="btn btn-success" id="btnLogin">Login</button>
+            </div>
+            <div style="display: none" id="txtThongBao">Thông Báo</div>
+        </div>
+    </div>
+    <hr>
+    <h1>Tính tiền típ</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label for="">Tổng tiền thanh toán</label>
+                    <input id="txtTongTien" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">Bạn muốn típ bao nhiêu</label>
+                    <select class="form-control" id="slPhanTramTip">
+                      <option value="0">chọn để típ</option>
+                      <option value="20">20%</option>
+                      <option value="15">15%</option>
+                      <option value="10">10%</option>
+                      <option value="5">5%</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="">Bạn muốn share bao nhiêu người</label>
+                    <input id="songuoi" type="text" class="form-control">
+                </div>
+                <button id="btnTinhTienTip" class="btn btn-danger">Tính tiền</button>
+            </div>
+        </div>
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+</body>
+
+<script src="./main.js"></script>
+<script src="./xeploai.js"></script>
+<!-- js bootstrap -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+</html>

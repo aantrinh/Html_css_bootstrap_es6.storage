@@ -1,0 +1,104 @@
+<!DOCTYPE html>    
+<html>
+    <head>
+        <title>DEMO HTML </title>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    </head> 
+    <!-- // thông tin thêm cho website -->
+    <body>
+        <h1 style="color:white; background-color: red; text-align: center;"> THE COFFEE HOUSE </h1> <!-- // khác nhau về độ rộng của size chữ, h1 max -->
+        <hr style= "width:200px; height: 5px;" noshade> 
+        <!-- // thuộc tính của hr để thay đổi kích thước của chiều dài hr -->
+        <!-- liên kết ngoại  -->
+        <a href="https://www.thecoffeehouse.com/"></a>
+
+        <!-- liên kết nội -->
+        <a href="#tea">Go to tea section </a> 
+        <!-- nội dung id phải có dấu # -->
+        <!-- chia bố cục -->
+        <div id= "tea">
+            <p style="text-align: right;">
+                <!-- tạo text giả lập, "lorem" -->
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. <i>Cupiditate consequuntur tempore omnis ducimus iure itaque</i>, <b>facere corporis veniam</b>, ipsam minus<br> nostrum necessitatibus optio explicabo 
+                <b>
+                    <i> 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Nesciunt illum commodi quod sint eius deleniti iusto vero laudantium, 
+                        asperiores totam necessitatibus laboriosam quae aspernatur beatae 
+                        voluptas repellat ratione! Iste, exercitationem.
+                    </i>
+                </b>
+                provident quo deserunt, similique praesentium minima.
+            </p>
+        </div>
+        <!-- chèn hình -->
+        <!-- đường dẫn 2 loại: tương đối và tuyệt đối -->
+        <!-- đường dẫn tuyệt đối -->
+        <img  src="D:\frontend 32\Buoi1_FE\img\blacktea.jpg" alt="">
+        <!-- đường dẫn tương đối có dấu "./", "../" đường dẫn ra thư mục cha-->
+        <!-- alt dùng để chú thích cho hình và SEO -->
+        <img style="width: 100% " src="./img/Green-Tea.jpg" alt="green tea">
+        <img src="../" alt="">
+
+        <!-- danh sách: có thứ tự và không có thứ tự -->
+        <!-- ds không có thứ tự ul -->
+        <ul>
+            <li>Danh mục1</li>
+            <li>Danh mục2</li>
+        </ul>
+        <!-- ds có thứ tự ol -->
+        <ol type="I">
+            <li>cà phê</li>
+            <li>trà sữa</li>
+            <li>nước trái cây</li>
+        </ol>
+        <!-- cú pháp code nhanh Emmet ul>li*con số muốn nhân lên-->
+        <ul>
+            <li>trà sữa trân châu đường đen</li>
+            <li>trà sữa trân châu đường nâu</li>
+            <li>trà sữa trân châu đường vàng</li>
+        </ul>
+
+        <table border="10px">
+            <tr>
+                <th colspan="2">Name</th>
+                <!-- gom cột bằng colspan  -->
+                <th>Type</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td style="background-color: pink;" rowspan="4">Traditional</td>
+                <td style="background-color: pink;" rowspan="2">Vietnamese</td>
+                <td style="background-color: pink;">hot</td>
+                <td style="background-color: pink;">60.000</td>
+            </tr>
+            <tr>
+                <td style="background-image: url('./img/coffee.jpg')">cold</td>
+                <td>28.000</td>
+            </tr>
+            <tr>
+                <td rowspan="2">milk coffee</td>
+                <td>hot</td>
+                <td>38.000</td>
+            </tr>
+            <tr>
+                <td>cold</td>
+                <td>54.000</td>
+            </tr>
+            <tr>
+                <td style="background-color: plum"" rowspan="3">Expresso</td>
+                <td>American coffee</td>
+                <td rowspan="3">Hot</td>
+                <td>110.000</td>
+            </tr>
+            <tr>
+                <td>Machiato</td>
+                <td rowspan="2">40.000</td>
+            </tr>
+            <tr>
+                <td>Cappuchino</td>
+            </tr>
+        </table>
+    </body>
+
+</html>

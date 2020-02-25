@@ -1,0 +1,84 @@
+$color-text:white;
+$bg-color:red;
+// những giá trị nào được use nhiều lần thì mới đem ra làm biến
+
+h1{
+    color: $color-text;
+    background-color: $bg-color;
+}
+
+.content1{
+    h2{
+        color: white;
+        background-color: orange;
+    }
+    p{
+        text-align: justify;
+    }
+    button{
+        
+        &:hover{
+            background-color: greenyellow;
+            color: red;
+        }
+        background-color: black;
+        color: white;
+    }
+}
+
+// Extend: chức năng kế thừa
+.content2{
+    // @extend .content1; //phải có cú pháp @extend để kế thừa thuộc tính đã thiết lập
+
+}
+
+// placeholder
+%styleContent{
+    h2{
+        color: white;
+        background-color: yellow;
+    }
+    button{
+        &:hover{
+            background-color: red;
+            color: white;
+        }
+    }
+}
+
+.content1, .content2{
+    @extend %styleContent;
+}
+
+// Mixin: gần giống function
+// có 2 kiểu mixin: 
+// không có tham số
+@mixin styleText {
+    h2{
+        color: white;
+        background-color: yellowgreen;
+    }
+}
+
+// .content3{
+//     // cách goi mixin = @include
+//     @include styleText;
+// }
+
+// có tham số
+@mixin styleText2($color, $bg-color) {
+    h2{
+        color: $color;
+        background-color: $bg-color;
+    }
+}
+.content3{
+    @include styleText2($color-text, $bg-color)
+}
+
+// điểm khác biệt giữa mixin vs function là function có thể return thuộc tính của nó
+
+@function ex1($color){
+    $value:$color;
+    @return $value;
+}

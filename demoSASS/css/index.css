@@ -1,0 +1,28 @@
+h1 {
+  color: white;
+  background-color: red; }
+
+.content1 h2 {
+  color: white;
+  background-color: orange; }
+.content1 p {
+  text-align: justify; }
+.content1 button {
+  background-color: black;
+  color: white; }
+  .content1 button:hover {
+    background-color: greenyellow;
+    color: red; }
+
+.content1 h2, .content2 h2 {
+  color: white;
+  background-color: yellow; }
+.content1 button:hover, .content2 button:hover {
+  background-color: red;
+  color: white; }
+
+.content3 h2 {
+  color: white;
+  background-color: red; }
+
+/*# sourceMappingURL=index.css.map */

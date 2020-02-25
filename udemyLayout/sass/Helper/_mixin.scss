@@ -1,0 +1,69 @@
+@mixin styleText($color, $fs, $fw) {
+    color: $color;
+    font-size: $fs;
+    font-weight: $fw;
+
+}
+@mixin styleButton($bg-color, $boder,$pd-top-bottom, $pd-right-left) {
+    background-color: $bg-color;
+    border: 1px solid $boder;
+    padding: $pd-top-bottom $pd-right-left ;
+}
+@mixin hoverButton($bg-color, $color, $border) {
+    background-color:$bg-color ;
+    color: $color;
+    border: 1px solid $border;
+}
+@mixin searchStyle($bg-color,$border,$bg-focus,$border-focus) {
+    .input-group{
+        background-color: $bg-color;
+        border: 1px solid $border;
+        border-radius: 0;
+        .form-control{
+            background-color:transparent; //mau trong suot: transparent
+            border: 1px solid transparent;
+            transition: none;
+            &:focus{
+                box-shadow: none;
+                background-color:$bg-focus;
+                border-top: 1px solid $border-focus;
+                border-bottom: 1px solid $border-focus;
+                border-left: 1px solid $border-focus;
+                & + .input-group-append{
+                    .input-group-text{
+                        background-color:$bg-focus;
+                border-top: 1px solid $border-focus;
+                border-bottom: 1px solid $border-focus;
+                border-right: 1px solid $border-focus;
+                &:hover{
+                    // background-color: $color-red-0;
+                    // color: $color-white-0;
+                    @include hoverButton($color-red-0, $color-white-0, $color-red-0);
+                }
+                    }  
+                }
+            }
+        }
+        .input-group-text{
+            background-color: transparent;
+            color: $color-red-0;
+            border: 1px solid transparent;
+            &:hover{
+                // background-color: $color-red-0;
+                // color: $color-white-0;
+                @include hoverButton($color-red-0, $color-white-0, $color-red-0);
+            }
+        }
+    }
+}
+@mixin mediaQuery($screen) {
+    @if map-has-key($map: $breakpoints , $key: $screen ){ //map truyền vào có ten của mảng, key là ten tham số đc truyền vào // map-has-key: dùng để so sánh giá trị
+        $value: map-get($map: $breakpoints, $key: $screen); //map-key: lấy giá trị của nó
+        @media screen and (max-width:$value) {
+            @content; 
+        }
+    }
+    @else {
+        @warn "`#{$screen}` không tồn tại"; //thông báo nếu không tìm thấy
+    }
+}

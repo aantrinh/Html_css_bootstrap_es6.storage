@@ -1,0 +1,76 @@
+.udemyNavbar{
+    @include styleText($color-black-light, $fs-1, $fw-normal);
+    .navbar-nav{
+        .nav-link{
+            @include styleText($color-black-light, $fs-1, $fw-normal);
+        }
+    }
+    
+    .header_left{
+        display: flex;
+        align-items: center;
+        .navbar-brand{
+            flex-grow: 0.5;
+            img{
+                width: 110px;
+            }
+        }
+
+        .categories{
+            flex-grow: 0.5;
+        }
+        .searchForm{
+            flex-grow: 6;
+            @include searchStyle($color-white-cream,$color-white-cream,$color-white-0,$color-gray-6);
+            // .input-group{
+            //     background-color: $color-white-cream;
+            //     border: 1px solid $color-white-cream;
+            //     border-radius: 0;
+            //     .form-control{
+            //         background-color:transparent; //mau trong suot: transparent
+            //         border: 1px solid transparent;
+            //         transition: none;
+            //         &:focus{
+            //             box-shadow: none;
+            //             background-color:$color-white-0;
+            //             border-top: 1px solid $color-gray-6;
+            //             border-bottom: 1px solid $color-gray-6;
+            //             border-left: 1px solid $color-gray-6;
+            //             & + .input-group-append{
+            //                 .input-group-text{
+            //                     background-color:$color-white-0;
+            //             border-top: 1px solid $color-gray-6;
+            //             border-bottom: 1px solid $color-gray-6;
+            //             border-right: 1px solid $color-gray-6;
+            //             &:hover{
+            //                 // background-color: $color-red-0;
+            //                 // color: $color-white-0;
+            //                 @include hoverButton($color-red-0, $color-white-0, $color-red-0);
+            //             }
+            //                 }  
+            //             }
+            //         }
+            //     }
+            //     .input-group-text{
+            //         background-color: transparent;
+            //         color: $color-red-0;
+            //         border: 1px solid transparent;
+            //         &:hover{
+            //             // background-color: $color-red-0;
+            //             // color: $color-white-0;
+            //             @include hoverButton($color-red-0, $color-white-0, $color-red-0);
+            //         }
+            //     }
+            // }
+        }
+    }
+}
+.header_right{
+    .navbar-nav{
+        @include mediaQuery('extra-large'){
+            .business, .teach{
+                display: none;
+            }
+        }
+    }
+}
